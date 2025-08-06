@@ -7,11 +7,11 @@ It consists of both a frontend and a backend and simulates a solution related to
 ---
 
 ## 📁 Project Structure
-
+```
 FULL-PROJECT/
 ├── formula1/ # Frontend client built with Vite + React
 ├── Formula1API/ # Backend API built with C# and ASP.NET Core
-
+```
 ---
 
 ## 🚀 Technologies Used
