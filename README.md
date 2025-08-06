@@ -19,8 +19,9 @@ FULL-PROJECT/
 ### Frontend (formula1)
 - Vite
 - React
-- TypeScript
+- JavaScript
 - HTML / CSS
+- Bootstrap CSS
 
 ### Backend (Formula1API)
 - ASP.NET Core
