@@ -34,16 +34,14 @@ FULL-PROJECT/
 ## 🛠️ How to Run Locally
 
 ### 🔹 Frontend (React)
-```
-bash
+```bash
 cd formula1
 npm install
 npm run dev
 ```
 
 ### 🔹 Backend (ASP.NET Core)
-```
-bash
+```bash
 cd Formula1API
 dotnet run
 ```
