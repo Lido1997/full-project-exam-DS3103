@@ -1,0 +1,16 @@
+# Generelt
+*.log
+.env
+.DS_Store
+
+# Node
+formula1/node_modules/
+formula1/dist/
+
+# .NET (backend)
+Formula1API/bin/
+Formula1API/obj/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates

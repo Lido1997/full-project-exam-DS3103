@@ -1,0 +1,68 @@
+.body {
+  padding-top: 20px;
+  background-color: rgb(102, 96, 212);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.margin_top {
+  margin-top: 20px;
+}
+
+.item_frame {
+  border: 3px solid rgb(114, 0, 0);
+  border-radius: 15px;
+}
+
+.border_section {
+  border: 3px solid rgba(114, 0, 0, 0.556);
+  border-radius: 15px;
+}
+
+.sectionBox_color {
+  background-color: rgba(43, 41, 41, 0.957);
+  border-radius: 15px;
+}
+
+.background_settings {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.race-item {
+  background-size: cover;
+  background-position: center;
+}
+
+.header_font {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.font_1 {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.item_bg {
+  background-color: rgb(251, 235, 211);
+}
+
+.image_border {
+  border-top: solid black 1px;
+  border-bottom: solid black 1px;
+}
+
+.custom_w {
+  width: 30%;
+}
+
+.navbar-image {
+  width: 110px;
+}
+
+.border_frame {
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 20px;
+}

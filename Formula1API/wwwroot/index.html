@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formula1 - API</title>
+    <link rel="icon" type="image/x-icon" href="images/f1logo.png">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="background_settings">
+        <img class="background_image" src="images/background5.jpg" alt="Background of formula 1 car">
+    </div>
+    
+
+    <div class="container mt-4 pb-3">
+        <main>   
+            <header>
+                <h1 class="header_font display-4 text-center text-danger">Documentation</h1>
+            </header>
+
+            <article class="articleBox_styling article_frame mb-4">
+                <div class="text_spacing">
+                    <h3 class="header_font text-danger">Introduction</h3>
+                    <p class="font_1">This documentation will help you get familiar with the resources of the Formula 1 API and show you how to make different queries, so that you can get the most out of it.</p>
+                </div>
+            </article>
+            
+            <article class="articleBox_styling article_frame mb-4">
+                <div class="text_spacing">
+                    <h3 class="header_font text-danger">REST</h3>
+                    <p class="font_1">Base url: http://localhost:5039/api/</p>
+                    <p class="font_1">The base url contains information about all available API's resources. All requests are GET requests and go over https. All responses will return data in json.</p>
+                </div>
+                <h3 class="header_font text-danger text_spacing">There are three available resources:</h3>
+                <div class="font_1">
+                    <ul>
+                        <li class="mb-2"><strong class="text-info">Drivers</strong> : used to get all drivers.</li>
+                        <li class="mb-2"><strong class="text-info">Teams</strong> : used to get all teams.</li>
+                        <li class="mb-2"><strong class="text-info">Races</strong> : used to get all races.</li>
+                    </ul>
+                </div>
+                <div class="text_spacing">
+                    <h3 class="header_font text-danger">GET</h3>
+                    <div class="font_1 ">
+                        <p>http://localhost:5039/api/</p>
+                        <p><strong class="text-info">"drivers"</strong> : http://localhost:5039/api/drivers</p>
+                        <p><strong class="text-info">"teams"</strong> : http://localhost:5039/api/teams</p>
+                        <p><strong class="text-info">"races"</strong> : http://localhost:5039/api/races</p>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="articleBox_styling article_frame mb-4">
+                <div class="text_spacing">
+                    <h3 class="header_font text-danger">Info</h3>                    
+                    <ul class="font_1">
+                        <li class="mb-2">The drivers resource contains the name, age, and nationality of each driver. In addition, the resource contains the name of the image file of the specific driver and its unique ID.</li>
+                        <li class="mb-2">The teams resource contains the manufacturer (for example Ferrari), driver1 and driver2 of each team. In addition, the resource contains the name of the image file of the specific team and its unique ID.</li>
+                        <li class="mb-2">The races resource contains the name of the winner, the winner time, the number of laps in the specific race and the GrandPrix (country where the race took place). In addition, the resource contains the unique ID of each race.</li>
+                    </ul>                    
+                </div>
+            </article>
+            
+            <article class="articleBox_styling article_frame mb-4">
+                <div class="text_spacing">
+                    <h3 class="header_font text-danger">Drivers schema</h3>
+                    <div class="font_1 row">
+                        <!-- Headers -->
+                        <h5 class="col-md-4 mb-2 text-info"><strong>Key:</strong></h5>
+                        <h5 class="col-md-4 mb-2 text-info"><strong>Type:</strong></h5>
+                        <h5 class="col-md-4 mb-2 text-info"><strong>Description:</strong></h5>
+                    
+                        <!-- Data -->
+                    
+                        <!-- id -->
+                        <p class="col-md-4 mb-2">id</p>
+                        <p class="col-md-4 mb-2">int</p>
+                        <p class="col-md-4 mb-2">Unique id of the driver</p>
+                    
+                        <!-- name -->
+                        <p class="col-md-4 mb-2">name</p>
+                        <p class="col-md-4 mb-2">string</p>
+                        <p class="col-md-4 mb-2">Name of the driver</p>
+                    
+                        <!-- age -->
+                        <p class="col-md-4 mb-2">age</p>
+                        <p class="col-md-4 mb-2">int</p>
+                        <p class="col-md-4 mb-2">Age of the driver</p>
+                    
+                        <!-- nationality -->
+                        <p class="col-md-4 mb-2">nationality</p>
+                        <p class="col-md-4 mb-2">string</p>
+                        <p class="col-md-4 mb-2">Where the driver is from</p>
+                    
+                        <!-- image -->
+                        <p class="col-md-4 mb-2">image</p>
+                        <p class="col-md-4 mb-2">string (url)</p>
+                        <p class="col-md-4 mb-2">Image of the driver</p>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="articleBox_styling article_frame mb-4">
+                <div class="text_spacing">
+                    <h3 class="header_font text-danger">Teams schema</h3>
+                    <div class="font_1 row">
+                        <!-- Headers -->
+                        <h5 class="col-md-4 mb-2 text-info"><strong>Key:</strong></h5>
+                        <h5 class="col-md-4 mb-2 text-info"><strong>Type:</strong></h5>
+                        <h5 class="col-md-4 mb-2 text-info"><strong>Description:</strong></h5>
+                    
+                        <!-- Data -->
+                    
+                        <!-- id -->
+                        <p class="col-md-4 mb-2">id</p>
+                        <p class="col-md-4 mb-2">int</p>
+                        <p class="col-md-4 mb-2">Unique id of the team</p>
+                    
+                        <!-- manufacturer -->
+                        <p class="col-md-4 mb-2">manufacturer</p>
+                        <p class="col-md-4 mb-2">string</p>
+                        <p class="col-md-4 mb-2">Manufacturer for the team</p>
+                    
+                        <!-- driver1 -->
+                        <p class="col-md-4 mb-2">driver1</p>
+                        <p class="col-md-4 mb-2">string</p>
+                        <p class="col-md-4 mb-2">driver 1 on the team</p>
+                    
+                        <!-- driver2 -->
+                        <p class="col-md-4 mb-2">driver2</p>
+                        <p class="col-md-4 mb-2">string</p>
+                        <p class="col-md-4 mb-2">driver 2 on the team</p>
+                    
+                        <!-- image -->
+                        <p class="col-md-4 mb-2">image</p>
+                        <p class="col-md-4 mb-2">string (url)</p>
+                        <p class="col-md-4 mb-2">Image of the car</p>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="articleBox_styling article_frame mb-4">
+                <div class="text_spacing">
+                    <h3 class="header_font text-danger">Races schema</h3>
+                    <div class="font_1 row">
+                        <!-- Headers -->
+                        <h5 class="col-md-4 mb-2 text-info"><strong>Key:</strong></h5>
+                        <h5 class="col-md-4 mb-2 text-info"><strong>Type:</strong></h5>
+                        <h5 class="col-md-4 mb-2 text-info"><strong>Description:</strong></h5>
+                    
+                        <!-- Data -->
+                    
+                        <!-- id -->
+                        <p class="col-md-4 mb-2">id</p>
+                        <p class="col-md-4 mb-2">int</p>
+                        <p class="col-md-4 mb-2">Unique id of the race</p>
+                    
+                        <!-- winnerName -->
+                        <p class="col-md-4 mb-2">winnerName</p>
+                        <p class="col-md-4 mb-2">string</p>
+                        <p class="col-md-4 mb-2">Name of the winner of the race</p>
+                    
+                        <!-- winnerTime -->
+                        <p class="col-md-4 mb-2">winnerTime</p>
+                        <p class="col-md-4 mb-2">string</p>
+                        <p class="col-md-4 mb-2">Winner time of the race</p>
+                    
+                        <!-- GrandPrix -->
+                        <p class="col-md-4 mb-2">GrandPrix</p>
+                        <p class="col-md-4 mb-2">string</p>
+                        <p class="col-md-4 mb-2">Where the race took place</p>
+
+                        <!-- Number of laps -->
+                        <p class="col-md-4 mb-2">Number of laps</p>
+                        <p class="col-md-4 mb-2">int</p>
+                        <p class="col-md-4 mb-2">Number of laps in the race</p>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- Accessing Drivers-->
+            <article class="articleBox_styling article_frame mb-4">
+                <div class="text_spacing">
+                    <h3 class="header_font text-danger">Accessing drivers</h3>
+                    <div class="font_1">
+                        <p class="mb-1"><strong class="text-info">Get all drivers:</strong></p>
+                        <p>http://localhost:5039/api/drivers</p>
+                        <p class="mb-1"><strong class="text-info">Get driver by id:</strong></p>
+                        <p>http://localhost:5039/api/drivers/{id of driver}</p>
+                        <p class="mb-1"><strong class="text-info">Get driver by name:</strong></p>                                    
+                        <p>http://localhost:5039/api/drivers/
+                            GetDriverByName/{name of driver}
+                        </p>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- Accessing teams -->
+            <article class="articleBox_styling article_frame mb-4">
+                <div class="text_spacing">
+                    <h3 class="header_font text-danger">Accessing teams</h3>
+                    <div class="font_1">
+                        <p class="mb-1"><strong class="text-info">Get all teams:</strong></p>
+                        <p>http://localhost:5039/api/teams</p>
+                        <p class="mb-1"><strong class="text-info">Get team by id: </strong></p>
+                        <p>http://localhost:5039/api/teams/{id of team}</p>
+                        <p class="mb-1"><strong class="text-info">Get team by manufacturer:</strong></p>
+                        <p>http://localhost:5039/api/teams/
+                            GetTeamByManufacturer/ {name of manufacturer}
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Accessing races -->
+            <article class="articleBox_styling article_frame mb-4">
+                <div class="text_spacing">
+                    <h3 class="header_font text-danger">Accessing races</h3>
+                    <div class="font_1">
+                        <p class="mb-2"><strong class="text-info">Get all races:</strong></p>
+                        <p>http://localhost:5039/api/teams</p>
+                        <p class="mb-2"><strong class="text-info">Get race by id:</strong></p>
+                        <p>http://localhost:5039/api/races/{id of race}</p>
+                        <p class="mb-2"><strong class="text-info">Get race by grandPrix:</strong></p>                                    
+                        <p>http://localhost:5039/api/races/
+                            GetRaceByGrandPrix{name of GrandPrix}
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </main>
+    </div>
+</body>
+</html>

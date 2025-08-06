@@ -1,0 +1,58 @@
+body {
+    margin: 0; 
+}
+
+.background_settings {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+
+.header_font {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.font_1 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.background_settings {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.background_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.article_frame {
+    border: 3px solid rgb(114, 0, 0);
+    border-radius: 15px;
+  }
+
+.container {
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding: 20px;
+}
+
+.articleBox_styling {
+    background-color: rgba(43, 41, 41, 0.969);
+    margin-top: 15px;
+    
+  }
+
+.text_spacing {
+    padding: 15px;
+    margin: 15px;
+}
+
+
+
